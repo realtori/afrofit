@@ -387,7 +387,7 @@ body{
     gap: 10px;
 }
 .sale .men{
-    background: #99CC99;
+    background: #e3e3e3;
     /* display: flex;
     align-items: center;
     justify-content: space-between; */
@@ -397,7 +397,7 @@ body{
     position: relative;
 }
 .sale .men:nth-child(2){
-    background: #ffcccc;
+    background: #e3e3e3;
 }
 .sale .men:nth-child(3){
     background: #e3e3e3;
@@ -531,217 +531,276 @@ body{
 
 
 /* trending */
-.trending{
-    margin-top: 100px;
-}
-.trending .flexc{
-    gap: 10px;
-    padding: 10px;
-    margin-top: 50px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    transition: 0.4s ease;
-}
-.trending-con .text-header{
-    margin: 0px auto;
-    text-align: center;
-    font-weight: 500;
-}
-.trending-con .text-header P:nth-child(1){
-    font-size: 24px;
-}
-.trending-con .text-header P:nth-child(2){
-    font-size: 16px;
-    color: #3d3d3d;
-}
-.trending li {
-    min-width: calc(100%/3 - 5px);
-    overflow: hidden;
-    background: white;
-    flex: auto;
-}
-.trending li .img-li{
-    position: relative;
-    opacity: 1;
-}
-.trending li .img-li img{
-    object-position: center;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-.trending li .img-li > img:nth-child(1){
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 1s ease-in-out;
-
-}
-.trending li .img-li:hover > img:nth-child(1){
-    opacity: 0;
-}
-.trending li .img-li:hover .text{
-    opacity: 1;
-}
-
-.trending .text {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;font-weight: 500;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
-}
-.trending .text .sale{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    color: white;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
 .trend{
-    position: relative;
-    overflow: hidden;
-    max-width: 1200px;
-    margin: 0px auto;
-    transition: 0.4s ease;
+    padding: 20px;
 }
-.trending .text .sale p:nth-child(1) {
+.trend .trend-con > p{
     text-align: center;
-    background-color: red;
-    width: 60px;
-    padding: 10px 0px;
+    font-size: 21px;
+    margin-top: 50px;
 }
-.trending .text .sale p:nth-child(2) {
-    text-align: center;
-    background-color: black;
-    width: 60px;
-    padding: 10px 0px;
-}
-.trending-con ul .select-icon{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+.trend ul{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.trending-con ul .select-icon .icon-con{
-    width: 30px;
-    height: 30px;
-    display: flex;
+    max-width: 1400px;
     justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.4s ease;
+    margin: 50px auto;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.trending-con ul .select-icon .icon-con:hover{
-    color: white;
-    background: black;
+.trend ul li{
+    width: calc(100%/4 - 50px);
+    list-style-type: none;
 }
-.buttons{
-    display: flex;
+.trend ul li .img{
+    position: relative;
+}
+.trend ul li .img{
     width: 100%;
-    gap: 3px;
-    display: none;
 }
-.buttons .icon-con{
-    width: calc(100%/3);
-    text-align: center;
+.trend ul li .img img{
+    width: 100%;
+}
+.trend ul li .img p{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+}
+.trend .text{
+    color: black;
+}
+.trend .text p{
+    color: black;
+    font-weight: 600;
     font-size: 16px;
-    padding: 10px 0px;
-    background: #EBEBEB;
 }
-.trending-con ul .place{
-    background: black;
-    width: 280px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    margin: 0px auto;
-    margin-left: 30px;
-    padding: 10px 0px;
-}
-.trending-con ul .img-l .text a {
-    color: white;
-    text-align: center;
-    padding: 8px 0px;
-
-}
-.trending li .text a {
-    color: white;
-    display: block;
+.trend .text p:first-child{
+    color: rgb(90, 90, 90);
     font-size: 14px;
-}
-.trending li .text span{
-    width: 100%;
-    background-color: black;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    padding: 10px 0px;
-}
-.carousel-prev, .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 400;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-}
-.carousel-prev {
-    left: -20px;
-}
-
-.carousel-next {
-    right: -25px;
-}
-.last-bottom{
-    line-height: 1.5;
-    margin-top: 10px;
     font-weight: 500;
+    margin: 10px 0px 5px 0px;
+}
+@media screen and (max-width: 500px) {
+    .trend .trend-con > p{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .trend ul li{
+        width: calc(100%/1 - 10px);
+        list-style-type: none;
+    }
+    .trend ul{
+        margin: 30px auto;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .trend{
+        padding: 10px;
+    }
+    .trend .text p{
+        color: black;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .trend .text p:first-child{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .trend .text p:nth-child(2){
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .trend ul li .img p{
+       font-size: 12px;
+    }
 }
 @media screen and (max-width: 1000px) {
-    .buttons{
-        display: flex;
+    .trend ul li{
+        width: calc(100%/4 - 10px);
+        list-style-type: none;
     }
-    .trending .text {
-        display: none;
+    .trend ul{
+        margin: 30px auto;
+        gap: 10px;
+        flex-wrap: wrap;
     }
-    /* .trending li .img-li img{
-        object-position: center;
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-    } */
 }
 @media screen and (max-width: 768px) {
-    .buttons{
-        display: flex;
+    .trend ul li{
+        width: calc(100%/2 - 30px);
+        list-style-type: none;
+    } 
+}
+@media screen and (max-width: 500px) {
+    .trend .trend-con > p{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
     }
-    .trending .text {
-        display: none;
+    .trend ul li{
+        width: calc(100%/2 - 20px);
+        list-style-type: none;
     }
-    .trending li {
-        min-width: calc(100%/2 - 5px);
-        overflow: hidden;
-        background: white;
+    .trend ul{
+        margin: 30px auto;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .trend{
+        padding: 10px;
+    }
+    .trend .text p{
+        color: black;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .trend .text p:first-child{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .trend .text p:nth-child(2){
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .trend ul li .img p{
+       font-size: 12px;
     }
 }
+
+
+.winter .winter-sales{
+    background: #E3E3E3;
+}
+.winter .middle{
+    max-width: 1300px;
+    gap: 10px;
+    padding: 10px;
+}
+.winter .winter-sales{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+    gap: 15px;
+    width: 50%;
+}
+.winter .winter-sales img{
+    height: 100%;
+    /* width: 80%; */
+    margin-left: -150px;
+}
+.winter .winter-sales .text p:nth-child(1){
+    font-size: 16px;
+}
+.winter .winter-sales .text p:nth-child(2){
+    font-size: 28px;
+    max-width: 200px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.winter .winter-sales .text{
+    margin-left: -20px;
+}
+.winter .winter-sales .text a{
+    display: block;
+    width: 120px;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.winter .winter-sales2{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+}
+.winter .winter-sales2 .img{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.winter .winter-sales2 .img img{
+    height: 500px;
+    width: 400px;
+    object-fit: contain;
+    object-position: center;
+    margin-top: -20px;
+}
+.winter .winter-sales2 .text2{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    padding: 0px 20px;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.winter .winter-sales2 .text2 p:nth-child(2){
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+@media screen and (max-width: 500px) {
+    .winter .middle{
+        flex-direction: column;
+    }
+    .winter .winter-sales2{
+        width: 100%;
+        height: 300px;
+    }
+    .winter .winter-sales{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 300px;
+        overflow: hidden;
+        gap: 15px;
+        width: 100%;
+    }
+    .winter .winter-sales2 .text2{
+        align-items: center;
+        padding: 0px 10px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .winter .winter-sales .text p:nth-child(1){
+        font-size: 14px;
+    }
+    .winter .winter-sales .text p:nth-child(2){
+        font-size: 24px;
+        max-width: 200px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .winter .winter-sales .text a{
+        display: block;
+        width: 90px;
+        background: red;
+        color: white;
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .winter .winter-sales img{
+        height: 100%;
+        /* width: 80%; */
+        margin-left: -120px;
+    }
+    .winter .winter-sales .text{
+        margin-left: 5px;
+    }
+}
+
 
 
 /* view */
