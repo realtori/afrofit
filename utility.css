@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.middle{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.flexs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
