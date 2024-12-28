@@ -1048,7 +1048,8 @@ body{
         font-size: 14px;
     }
     .exclusive-items ul{
-        padding: 10px;
+        padding: 5px;
+        gap: 5px;
     }
     .exclusive-items ul li{
         width: calc(100%/2 - 5px);
@@ -1097,13 +1098,16 @@ body{
         object-position: center;
     }
     .exclusive-items ul li a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .exclusive-items ul li .text p{
         font-size: 12px;
         padding: 5px 10px;
         height: 25px;
         vertical-align: middle;
+    }
+    .exclusive-items ul li .text-li p:nth-child(2){
+        font-size: 14px;
     }
 }
 .for-all{
@@ -1144,6 +1148,13 @@ body{
 }
 .for-all .middle .img img{
     width: 650px;
+}
+.wom .middle .img img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+
 }
 .for-all .text .inner-text{
     text-align:  center;
@@ -1189,7 +1200,10 @@ body{
 }
 @media screen and (max-width: 500px) {
     .for-all .middle .img img{
-        width: 420px;
+        width: 250px;
+        height: 270px;
+        object-position: center;
+        object-fit: cover;
     }
     .for-all .middle{
         height: 250px;
@@ -2819,7 +2833,53 @@ body{
     align-items: center;
     
 }
+@media screen and (max-width:768px) {
+    .pop-up .img{
+        display: none;
+    }
+    .pop-up .middle{
+        width: 80%;
+        height: 350px; 
+        justify-content: center;
+    }
+    .pop-up .middle .text{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .pop-up .middle .text{
+        width: 100%;
+    }
+    .pop-up .middle{
+        width: 90%;
+        height: 300px; 
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .pop-up .middle .text{
+        width: 100%;
+        padding: 5px;
+    }
+    .pop-up .middle{
+        width: 90%;
+        height: 300px; 
+        justify-content: center;
+    }
+    .pop-up .middle .text form input{
+        height: 40px;
+        width: 80%;
+    }
+    .pop-up .middle .text form button{
+        background-color: red;
+        color: white;
+        padding: 10px 15px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
 
+}
 /* .product .img-con{
     display: flex;
     overflow: hidden;
