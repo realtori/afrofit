@@ -1110,6 +1110,266 @@ body{
         font-size: 14px;
     }
 }
+
+.exclusive-items-one{
+    margin: 20px;
+}
+.exclusive-items-one  .middle > p{
+    text-align: center;
+    font-size: 21px;
+    margin: 20px 5px;
+}
+.exclusive-items-one ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.exclusive-items-one ul li{
+    width: calc(100%/3 - 30px);
+    height: 490px;
+    position: relative;
+    list-style-type: none;
+    overflow: hidden;
+}
+.exclusive-items-one ul li img{
+    width: 400px;
+    height: 400px;
+    margin-left: -20px;
+    transition: 0.4s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+}
+.exclusive-items-one ul li .li-con:hover img:nth-child(1){
+    scale: 1.1;
+}
+
+.exclusive-items-one ul li .text-li p:nth-child(1){
+    font-size: 14px;
+}
+.exclusive-items-one ul li .text-li p:nth-child(2){
+    font-weight: 600;
+}
+.exclusive-items-one ul li a{
+    background-color: red;
+    display: block;
+    text-align: center;
+    color: white;
+    max-width: 200px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.exclusive-items-one ul li a:hover{
+    background: red;
+}
+.exclusive-items-one ul .text {
+    display: flex;
+    justify-content: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 14px;
+}
+.exclusive-items-one ul .text p{
+    background: red;
+    padding: 10px 15px;
+    color: white;
+    height: 40px;
+}
+.exclusive-items-one ul li .icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.exclusive-items-one ul li .icon span{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+.exclusive-items-one ul .li-con > a {
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    transform: translateX(-50%);
+    padding: 10px 0px;
+    font-size: 12px;
+}
+.exclusive-items-one ul > a{
+    width: 40%;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 10px auto;
+}
+.exclusive-items-one ul .li-con > span a{
+    color: white;
+}
+
+.exclusive-items-one ul li .flexc a{
+    color: black;
+    text-align: center;
+    display: block;
+    border: 1px solid black;
+    width: 60%;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+.exclusive-items-one ul li .flexc a:hover{
+    color: white;
+    background: black;
+    
+}
+.exclusive-items-one ul li .flexc{
+    text-align: center;
+    display: none;
+}
+.exclusive-items-one ul li .flexc .icons span{ 
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .exclusive-items-one ul li{
+        width: calc(100%/3 - 20px);
+        height: 400px;
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .exclusive-items-one ul li img{
+        width: 320px;
+        height: 300px;
+        margin-left: -25px;
+        transition: 0.4s ease-in-out;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .exclusive-items-one ul li{
+        width: calc(100%/2 - 60px);
+        height: 390px;
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .exclusive-items-one ul li img{
+        width: 320px;
+        height: 300px;
+        margin-left: -25px;
+        transition: 0.4s ease-in-out;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .exclusive-items-one ul li{
+        width: calc(100%/2 - 20px);
+        height: 400px;
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .exclusive-items-one ul li img{
+        width: 280px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .exclusive-items-one ul li .flexc{
+        display: flex;
+        justify-content: center;
+    }
+    .exclusive-items-one ul li .flexc .icons span{ 
+        margin-left: 5px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .exclusive-items-one ul li .flexc .icons span i{
+        font-size: 14px;
+    }
+    .exclusive-items-one ul li .flexc a{
+        font-size: 14px;
+    }
+    .exclusive-items-one ul{
+        padding: 5px;
+        gap: 5px;
+    }
+    .exclusive-items-one ul li{
+        width: calc(100%/2 - 5px);
+        height: 350px;
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .exclusive-items-one ul .text .icon,.exclusive-items-one ul .text a{
+        display: none;        
+    }
+    .exclusive-items-one ul .text p{
+        font-size: 11px;
+        height: 33px;
+    }
+    .exclusive-items-one ul li img{
+        width: 230px;
+        height: 250px;
+        margin-left: -5px;
+        transition: 0.4s ease-in-out;
+        object-fit: cover;
+        object-position: center;
+    }
+    .exclusive-items-one ul .li-con > a {
+        display: none;
+    }
+    .exclusive-items-one{
+        margin: 5px;
+    }
+    .exclusive-items-one ul li a{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 410px) {
+    .exclusive-items-one ul li .flexc a{
+        font-size: 12px;
+    }
+    .exclusive-items-one ul li .flexc .icons span{ 
+        margin-left: 1px;
+    }
+    .exclusive-items-one ul li img{
+        margin-left: -30px;
+        transition: 0.4s ease-in-out;
+        object-fit: cover;
+        object-position: center;
+    }
+    .exclusive-items-one ul li a{
+        font-size: 12px;
+    }
+    .exclusive-items-one ul li .text p{
+        font-size: 12px;
+        padding: 5px 10px;
+        height: 25px;
+        vertical-align: middle;
+    }
+    .exclusive-items-one ul li .text-li p:nth-child(2){
+        font-size: 14px;
+    }
+}
 .for-all{
     margin: 10px;
 }
