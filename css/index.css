@@ -358,6 +358,7 @@ body{
     justify-content: space-evenly;
     gap: 40px;
     list-style-type: none;
+    transition: 0.4s ease-in;
 }
 .shop-home ul li{
     min-width: calc(100%/5 - 40px);
@@ -369,24 +370,82 @@ body{
 .shop-home ul a{
     color: black;
 }
+.shop-home .butt{ 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.shop-home .butt button{
+    position: absolute;
+    background: rgba(192, 192, 192, 0.4);
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 99;
+}
+.shop-home .butt button:hover{
+    background: rgba(192, 192, 192, 0.8);
+}
+.shop-home .butt button:first-child{
+    left: 0;
+    transform: scaleX(-1);
+    margin-top: -20px;
+}
+.shop-home .butt button:last-child{
+    right: 0;
+}
 @media screen and (max-width: 768px) {
     .shop-home ul{
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 500px) {
     .shop-home ul{
         font-size: 12px;
+        width: 80%;
     }
     .shop-home ul li{
-        min-width: calc(100%/4 - 10px);
+        min-width: calc(100%/4);
         text-align: center;
     }
     .shop-home{
         margin-top: 10px;
     }
+    
 }
-
+@media screen and (max-width: 400px) {
+    .shop-home ul{
+        font-size: 12px;
+        width: 90%;
+        gap: 10px;
+        margin-left: 15px;
+    }
+    .shop-home ul li{
+        min-width: calc(100%/3 - 10px);
+        text-align: center;
+    }
+    .shop-home{
+        margin-top: 10px;
+    }
+    .shop-home .butt button{
+        position: absolute;
+        background: rgba(192, 192, 192, 0.1);
+        color: black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        outline: 0;
+        border: 1px solid grey;
+        
+    }
+}
 .sale .flexc{
     gap: 10px;
 }
@@ -524,6 +583,9 @@ body{
     .sale .men .text a{
         width: 95px;
         font-size: 12px;
+    }
+    .shop-home .butt button{
+        display: block;
     }
 }
 
