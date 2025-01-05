@@ -24,9 +24,9 @@ footer.innerHTML = `
                     </ul>
                     <ul>
                         <h4>Information</h4>
-                        <a href="shop.html?click=1"><li>Pants</li></a>
-                        <a href="shop.html?click=2"><li>Shorts</li></a>
-                        <a href="shop.html?click=3"><li>Jackets</li></a>
+                        <a href="sock.html"><li>Socks</li></a>
+                        <a href="headear.html"><li>Head Gear</li></a>
+                        <a href="shop.html"><li>All Items</li></a>
                         <a href="shop.html?click=4"><li>T-shirts</li></a>
                         <a href="shop.html?click=5"><li>Round Nectks</li></a>
                     </ul>
