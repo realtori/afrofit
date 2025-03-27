@@ -19,3 +19,5 @@ right.addEventListener('click', function() {
             updateCarousel();
 });
 
+// 
+

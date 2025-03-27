@@ -70,6 +70,8 @@ removesidebar.addEventListener('click',()=>{
 })
 hamburg.addEventListener('click',()=>{
     sidebar.classList.toggle('hide')
+    console.log('hi');
+    
 })
 
 let drop = document.querySelector('.drop')
@@ -80,12 +82,66 @@ drop.addEventListener('click',()=>{
 })
 
 
-
-// pop- up 
-let pop = document.querySelector('.pop-up')
-
-pop.addEventListener('click',()=>{
-    pop.classList.add('pop-remove')
+// cart 
+let cart = document.querySelector('.cart-con')
+let displacart = document.querySelector('.add-to-cart')
+displacart.addEventListener('click', ()=>{
+    cart.classList.add('show')
+    console.log('clicked');
+    
 })
+
+
+
+
+
+
+// close cart
+let closeCart = document.querySelector('.cart-con .close-cart')
+
+closeCart.addEventListener('click',()=>{
+    cart.classList.remove('show')
+    
+})
+
+// view-cart-add-button
+let viewAddButton = document.querySelector('.view-cart-add-button')
+
+viewAddButton.addEventListener('click',()=>{
+    cart.classList.add('show')
+})
+
+// close proceed
+// let closeProceed = document.querySelector('.close-proceed')
+// let proceedCon = document.querySelector('.proceed-con')
+let proceed = document.querySelector('.proceed')
+
+// closeProceed.addEventListener('click',()=>{
+//     proceedCon.classList.remove('show')
+// })
+proceed.addEventListener('click',()=>{
+    proceedCon.classList.add('show')
+})
+
+// submit Controls
+
+let closCart = document.querySelector('.submit-control .back')
+closCart.addEventListener('click', ()=>{
+    proceedCon.classList.remove('show')
+
+})
+
+// let cancel order 
+let finalise = document.querySelector('.finalise-con')
+let goback = document.querySelector('.goback')
+let placeOrder = document.querySelector('.place-order') 
+placeOrder.addEventListener('click', ()=>{
+    finalise.classList.add('show')
+})
+goback.addEventListener('click',()=>{
+    finalise.classList.remove('show')
+})
+
+
 
 
