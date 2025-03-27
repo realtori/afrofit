@@ -14,7 +14,625 @@
 body{
     font-family: 'mont';
     font-weight: 500;
+    position: relative;
 }
+.add-to-cart{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 85%;
+    right: 16%;
+    border-radius: 50%;
+    z-index: 999;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-to-cart .items{
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    background-color: red;
+    padding: 5px;
+    min-width: 25px;
+    min-height: 25px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.black{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999;
+    display: none;
+}
+.black.show{
+    opacity: 0;
+    display: block;
+    display: none;
+}
+
+.views-con{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    bottom: -100%;
+}
+.cart-con{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%;
+    transition: 0.3s ease-in-out;
+
+}
+
+.cart-con .align, .proceed-con .align,.views-con .align{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.cart-con .align .close-cart{
+    margin-bottom: 5px;
+}
+
+.cart > p{
+    height: 70px;
+    background-color: #E9E9E9;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 21px;
+    font-weight: 600;
+}
+.proceed-con, .finalise-con{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100%;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-con .align .cart, .proceed-con .proceed-input,.finalise-con .finalise, .views-con .view-items{
+    width: 500px;
+    height: 650px;
+    background: white;
+}
+.views-con .view-items{
+    height: 700px;
+}
+.finalise .complete-order-button .complete-button span p:first-child{
+    font-size: 18px;
+    font-weight: 700;
+}
+.finalise .complete-order-button .complete-button img{
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.goback{
+    display: block;
+    width: 200px;
+    background: black;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.item-info,.item-info2{
+    width: 180px;
+    border: 1px solid green;
+    background-color: green;
+    animation: downtoup 0.8s 1;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 5px;
+    z-index: 99999;
+    text-align: center;
+    color: white;
+    padding: 10px 15px;
+    display: none;
+
+}
+.item-info2{
+    border: 1px solid red;
+    background-color: red;
+
+}
+.item-info,.item-info2{
+
+}
+@keyframes downtoup {
+    0%{
+        transform: translateY(-100%);
+    }
+}
+@media screen and (max-width: 500px) {
+    .cart-con .align .cart, .proceed-con .proceed-input,.finalise-con .finalise,.views-con .view-items{
+        width: 100%;
+        height: 75vh;
+        background: white;
+    }
+    .cart-con .align{
+        width: 100%;
+    }
+    .proceed-con .align{
+        width: 100%;
+    }
+    .views-con .align{
+        width: 100%;
+    }
+    .proceed-con{
+        align-items: flex-end;
+    }
+    .views-con{
+        align-items: flex-end;
+    }
+    .cart-con{
+        align-items: flex-end;
+    }
+    .cart-con .proceed{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .cart > p{
+        height: 60px;
+        background-color: #E9E9E9;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 600;
+    } 
+    .finalise .complete-order-button .complete-button span p:first-child{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .finalise .complete-order-button .complete-button img{
+        height: 40px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .goback{
+        width: 150px;
+        margin-top: 60px;
+    }
+    .finalise-con{
+        align-items: flex-end;
+    }
+}
+.cart-con .close-cart{
+    scale: 1;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-con.show{
+    opacity: 1;
+    bottom: 0;   
+}
+.cart-con .proceed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.cart-con .proceed p{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 35px;
+
+}
+
+.cart-con .flexs{
+    padding: 5px 20px;
+}
+.cart-con .flexs .price{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.cart .totalprice{
+    background: #E9E9E9;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px ;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    padding-right: 20px;
+}
+.cart-products .cart-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.cart-products .cart-items .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.cart-products .cart-items .item-details{
+    min-width: 50%;    
+}
+.cart-products .cart-items .delete-cart-item{
+    background-color: #EBEBEB;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-products .cart-items .increase, .cart-products .cart-items .decrease{
+    background-color: #EBEBEB;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-products .cart-items .item-details .flexs{
+    gap: 10px;
+}
+.cart-products .cart-items .quantity{
+    border: 1px solid rgb(214, 214, 214);
+    text-align: center;
+    padding: 5px 10px;
+}
+.cart-products .cart-items .price2{
+    border: 1px solid rgb(214, 214, 214);
+    text-align: center;
+    padding: 5px;
+}
+.cart-products .cart-items .img{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.cart-products .cart-items .img img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.cart-con .cart-products{
+    overflow: scroll;
+    max-height: 70%;
+}
+.finalise-con.show{
+    bottom: 0;
+}
+
+.finalise-con .finalise > p{
+    width: 100%;
+    padding: 20px 0px 20px 30px;
+    background: #E9E9E9;
+}
+.finalise .notice {
+    display: flex;
+    padding: 20px 20px 20px 10px ;
+    font-size: 14px;
+    background: rgba(255, 0, 0, 0.144);
+
+}
+.finalise .notice img {
+    max-height: 30px;
+    margin: 0px 20px;
+}
+.finalise .complete-order{
+    margin-top: 30px;
+}
+.finalise .complete-order p{
+    text-align: center;
+    font-size: 24px;
+    margin: 0px auto;
+}
+
+.finalise .complete-order span p:last-child{
+    font-weight: 700;
+    margin-top: 10px;
+}
+.finalise .complete-order-button{
+    margin-top: 20px;
+}
+.finalise .complete-order-button .complete-button{
+    display: flex;
+    margin-left: 30px;
+    line-height: 2;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.proceed-con .submit-control{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 10px;
+}
+.proceed-con .submit-control button{
+    background: black;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    font-family: 'mont';
+
+}
+.proceed-con.show{
+    bottom: 0px;
+    opacity: 1;
+}
+
+.proceed-con .proceed-input .receive{
+    overflow-y: scroll;
+    max-height: 90%;
+}
+.proceed-con .proceed-input .receive > p{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.proceed-con .proceed-input .span{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.proceed-con .proceed-input .span input{
+    margin-left: 10px;
+}
+.proceed-con .proceed-input >  p{
+    width: 100%;
+    padding: 20px 0px 20px 30px;
+    background: #E9E9E9;
+}
+.proceed-con .proceed-input .contact-details, .proceed-con .delivery-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.proceed-con .proceed-input .contact-details > p, .proceed-con .proceed-input .delivery-details > p{
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.proceed-con .proceed-input .contact-details input{
+    width: 90%;
+    min-height: 50px;
+    font-family: 'mont';
+    padding-left: 20px;
+    margin-top: 10px;
+    
+}
+.proceed-con .delivery-details input, .proceed-con .delivery-details textarea{
+    width: 90%;
+    min-height: 50px;
+    font-family: 'mont';
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.proceed-con .delivery-details textarea{
+    min-height: 150px;
+}
+.proceed-con .close-proceed{
+    background: white;
+    color: black;
+    border-radius: 50%;
+    z-index: 99;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+.view-items > p{
+    height: 70px;
+    background-color: #E9E9E9;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 21px;
+    font-weight: 600;
+}
+.views-con.show{
+    opacity: 1;
+    bottom: 0;
+}
+.view-items .images{
+    margin: 30px 10px 0px 5px;
+    padding: 0px 0px 20px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #c0c0c0;
+}
+.view-items .images .view-item-images{
+    display: flex;
+    gap: 5px;
+}
+.view-items .images .img{
+    min-width: 160px;
+    height: 180px;
+    overflow: hidden;
+}
+.view-items .images .img img{
+    width: 170px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+     margin-left: 5px; 
+}
+.view-items .size {
+   padding-left: 20px;
+}
+.view-items .size  > p:nth-child(1){
+    color: #808080;
+    font-size: 18px;
+    margin-top: 20px;
+} 
+.view-items .size > .flexc{
+    justify-content: flex-start;
+    gap: 10px;   
+}
+.view-items .size  > p:nth-child(3){
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.close{
+    margin: 10px 10px ;
+    scale: 1.1;
+    color: black;
+    background: white;
+    font-weight: 900;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+.close svg{
+    filter: drop-shadow(2px 5px 15px white);
+}
+.view-items .size  > p:last-child{
+    font-size: 24px;
+    font-weight: 600;
+}
+.view-items .size > .flexc p{
+    background: #C5C5C5;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.view-items .text{
+    padding: 20px;
+    line-height: 20px;
+    color: #808080;
+}
+.view-items .text .flexs:nth-child(1){
+    margin-top: 10px;
+}
+.view-items .text .flexs:nth-child(2){
+    margin-top: 15px;
+}
+.views-con .add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.views-con .add-button p{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+@media screen and (max-width: 700px) {
+    
+}
+@media screen and (max-width: 700px) {
+
+    
+}
+@media screen and (max-width: 500px) {
+    .view-items > p{
+        height: 50px;
+        padding-top: 15px;
+        padding-left: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    .view-items .size > p:first-child{
+        font-size: 16px;
+    }
+    .view-items .size > p:nth-child(3){
+        font-size: 16px;
+    }
+
+    .view-items .size > .flexc p{
+        font-size: 14px;
+    }
+    .view-items .size  > p:last-child{
+        font-size: 18px;
+        font-weight: 600;
+    }
+   
+    
+}
+
+
+
+
+
+
 .top-bar{
     background:  black;
     padding: 15px 10px;
@@ -912,6 +1530,12 @@ body{
 .exclusive-items{
     margin: 20px;
 }
+.exclusive-items  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .exclusive-items  .middle > p{
     text-align: center;
     font-size: 21px;
@@ -953,6 +1577,26 @@ body{
 }
 .exclusive-items ul li .text-li p:nth-child(2){
     font-weight: 600;
+}
+.exclusive-items ul li .text-li div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.exclusive-items ul li .text-li div i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.exclusive-items ul li .text-li div i:hover{
+    color: red;
+}
+.exclusive-items ul li .text-li div button{
+    background: rgb(46, 46, 46);
+    color: white ;
+    width: 50%;
+    font-size: 14px;
+    padding: 5px;
+    font-family: 'mont';
 }
 .exclusive-items ul li a{
     background-color: rgba(110, 83, 83, 0.575);
@@ -1007,7 +1651,7 @@ body{
     padding: 10px 0px;
     font-size: 12px;
 }
-.exclusive-items ul > a{
+.exclusive-items .middle > a{
     width: 40%;
     background: red;
     color: white;
@@ -3089,6 +3733,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .pop-up.pop-remove{
     display:  none;
