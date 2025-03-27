@@ -11,8 +11,179 @@
     <link rel="stylesheet" href="font-awesome/css/all.css">
     <link rel="shortcut icon" href="images/icons/logo-black.png" type="image/x-icon">
     <script src="js/eye.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
 </head>
 <body>
+    <div class="item-info">
+        <p>Item successfully added to cart</p>
+    </div>
+    <div class="item-info2">
+        <p>Item sucsessfully removed from cart</p>
+    </div>
+    
+    <div class="cart-con ">
+        <div class="align">
+            <div class="close-cart">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                </svg>
+            </div>
+            <div class="cart">
+                <p>Cart</p>
+                <div class="cart-products">
+                   
+                   
+                </div>
+                <div class="totalprice flexs">
+                   <div class="flexc">
+                       <img src="" alt="">
+                       <p>Total Price: </p>
+                   </div>
+                   <p class="price">NGN 0</p>
+                </div>
+               <div class="proceed">
+                   <p>Proceed</p>
+               </div>
+           </div>
+        </div>
+        
+    </div>
+    <div class="proceed-con">
+        <div class="align">
+            <div class="close-proceed">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                </svg>
+            </div>
+            <div class="proceed-input">
+                <p>Complete Order</p>
+                <div class="receive">
+                    <p>Who will receive this item?</p>
+                    <div class="span">
+                        <span>
+                            Myself<input type="radio" name="receive" id="">
+                        </span>
+                        <span>
+                            Someone Else<input type="radio" name="receive" id="">
+                        </span>
+                    </div>
+
+                    <div class="contact-details">
+                        <p>Your Details</p>
+                        <input type="text" name="name" placeholder="Full Name" >
+                        <input type="number" name="number" placeholder="Whatsapp Number">
+                        <input type="email" name="emai" placeholder="Email">
+                    </div>
+                    <div class="delivery-details">
+                        <p>Delivery Details</p>
+                        <input type="text" name="state" placeholder="State">
+                        <textarea name="address" id="" placeholder="Delivery Address"></textarea>
+                        <textarea name="address" id="" placeholder="Other Info"></textarea>
+                    </div>
+                    <div class="submit-control">
+                        <button class="back">Previous page</button>
+                        <button class="place-order">Place Order</button>
+                    </div>
+                </div>
+                
+            </div>
+           
+    </div>
+        
+    </div>
+    <div class="finalise-con">
+        <div class="align">
+            <div class="close-proceed">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                </svg>
+            </div>
+            <div class="finalise">
+                <p>Finalise Order</p>
+                <div class="">
+                    <span class="notice">
+                        <img src="images/icons/182_warning_notice_error-512.webp" alt="">
+                        <p>Kindly make payment in order to validate your order and avoid your order being cancelled</p>
+                    </span>
+                    <div class="complete-order">
+                        <span>
+                            <p>How would you like</p>
+                            <p>to complete you order?</p>
+                        </span>
+                    </div>
+                    <div class="complete-order-button">
+                        <div class="complete-button">
+                            <img src="images/icons/3146791_whatsapp_logo_icon.png" alt="whatsapp image">
+                            <span>
+                                <p>Send to whatsapp</p>
+                                <p>Finalize your order with whatsapp</p>
+                            </span>
+                        </div>
+                        <div class="complete-button">
+                            <img src="images/icons/images.jpeg" alt="whatsapp image">
+                            <span>
+                                <p>Send to instagram</p>
+                                <p>Finalize your order with instagram</p>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="goback">Previous page</span>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="add-to-cart">
+        <div class="items">
+            <P>0</P>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="views-con">
+        <div class="align">
+            <div class="close">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
+                </svg>
+                
+            </div>
+            <div class="view-items">
+                <p class="view-item-name" ></p>
+                <div class="images ">
+                    <div class="view-item-images"></div>
+                </div>
+                <div class="size">
+                    <p>Sizes:</p>
+                    <div class="flexc">
+                        <p>M</p>
+                        <p>L</p>
+                        <p>XL..</p>
+                    </div>
+                    <p>In Stock</p>
+                    <p class="view-item-price">NGN 15,000.00</p>
+                </div>
+                <div class="text">
+                    <div class="flexs">
+                        <p>Product Category:</p>
+                        <p class="view-item-type"></p>
+                    </div>
+                    <div class="flexs">
+                        <p>Description:</p>
+                        <p class="view-item-description"></p>
+                    </div>
+                </div>
+                <div class="add-button">
+                    <p class="view-cart-add-button">View Cart</p>
+                    <p class="addtocart">Add to cart</p>
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
     <div class="sidebar hide">
         <div class="sidebar-con">
             <div class="flexs logo">
@@ -167,551 +338,13 @@
     
 
 
-    <div class="exclusive-items">
+    <div class="exclusive-items shop">
         <div class="middle">
+            <p>- Exclusive Collection -</p>
                 <ul>
                     
-                    <li>
-                        <div class="li-con">
-                            <img src="images/1.jpg" alt="">
-                            <img src="images/1b.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Beach-Stream Addiction</p>
-                            <a href="products/beach.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/2a.jpg" alt="">
-                            <img src="images/2aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>St-sauce bay-button sweatshirt</p>
-                            <a href="products/st-sauce.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="li-con">
-                            <img src="images/3a.jpg" alt="">
-                            <img src="images/3aaaa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Omi-aro zip through hoodie</p>
-                            <a href="products/omi-aro.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/4aaa.jpg" alt="">
-                            <img src="images/4aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Cold patch winter hoodie</p>
-                            <a href="products/Coldpatch.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/5a.jpg" alt="">
-                            <img src="images/5aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Planet eclipse t-shirt</p>
-                            <a href="products/planet.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/6a.jpg" alt="">
-                            <img src="images/6aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Memento mori hoodie</p>
-                            <a href="products/memento.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/7a.jpg" alt="">
-                            <img src="images/7aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>PCY T-Shirt gym fit </p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/13a.jpg" alt="">
-                            <img src="images/13a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Rash cut denim pants</p>
-                            <a href="products/one-image/rash.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/14a.jpg" alt="">
-                            <img src="images/14a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>BAY DENIM JORTS</p>
-                            <a href="products/one-image/bay.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/15a.jpg" alt="">
-                            <img src="images/15a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Crotch knit shorts</p>
-                            <a href="products/one-image/crotch.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/17a.jpg" alt="">
-                            <img src="images/17aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Custom long</p>
-                            <a href="products/one-image/cusom.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/18a.jpg" alt="">
-                            <img src="images/18aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>Custom Jorts</p>
-                            <a href="products/one-image/jort.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/19a.jpg" alt="">
-                            <img src="images/19aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>custom PCY tennis short</p>
-                            <a href="products/one-image/tennis.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/20a.jpg" alt="">
-                            <img src="images/20a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Men</p>
-                            <p>FELA FREEDOM CROP-T</p>
-                            <a href="products/one-image/fela.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="li-con">
-                            <img src="images/21a.jpg" alt="">
-                            <img src="images/21a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Rare piece of you Tshirt</p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/22a.jpg" alt="">
-                            <img src="images/22a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>PCY tennis shorts</p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/23a.jpg" alt="">
-                            <img src="images/23a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Defined logo short</p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/24.jpg" alt="">
-                            <img src="images/24.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Retro-lasgidi jersey</p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/25.jpg" alt="">
-                            <img src="images/25.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>VICTIMLESS EMBROIDER T</p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/26.jpg" alt="">
-                            <img src="images/26.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>RYCH YUTE CROP T</p>
-                            <a href="products/gymfit.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="li-con">
-                            <img src="images/8a.jpg" alt="">
-                            <img src="images/8aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For women</p>
-                            <p>Crotched-knit armless tank</p>
-                            <a href="products/women/crotched.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/9a.jpg" alt="">
-                            <img src="images/9aa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Women</p>
-                            <p>Cassandria tennis crop T</p>
-                            <a href="products/women/cassandri.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="li-con">
-                            <img src="images/2.png" alt="">
-                            <img src="images/2b.png" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Women</p>
-                            <p>Porceslyme crop T</p>
-                            <a href="products/women/crop.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/10a.jpg" alt="">
-                            <img src="images/10aaaaa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Women</p>
-                            <p>Pair Wolf</p>
-                            <a href="products/women/pair.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/11a.jpg" alt="">
-                            <img src="images/11aaaa.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Women</p>
-                            <p>JESUS-SAVES CROP T (BLACK)</p>
-                            <a href="products/women/jesus.html">
-                                View item
-                            </a>
-                        </div>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/6.jpg" alt="">
-                            <img src="images/6b.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Women</p>
-                            <p>Urban Jorts</p>
-                            <a href="products/women/jorts.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/12a.jpg" alt="">
-                            <img src="images/12a.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>For Women</p>
-                            <p>el_savior skirt</p>
-                            <a href="products/women/e-shirt.html">
-                                View item
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/cap3.jpg" alt="">
-                            <img src="images/cap3.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Panama</p>
-                            <a href="products/caps/bb.html">
-                                View Items
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/cap4.jpg" alt="">
-                            <img src="images/cap4.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Panama</p>
-                            <a href="products/caps/panama.html">
-                                View Items
-                            </a>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <div class="li-con">
-                            <img src="images/cap5.jpg" alt="">
-                            <img src="images/cap5.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Pan</p>
-                            <a href="products/caps/pan.html">
-                                View Items
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="li-con">
-                            <img src="images/cap6.jpg" alt="">
-                            <img src="images/cap6.jpg" alt="">
-                            <div class="text">
-                                <p>Sale</p>
-                                
-                            </div>
-                                
-                        </div>
-                        <div class="text-li">
-                            <p>Unisex</p>
-                            <p>Beach-Stream Addiction</p>
-                            <a href="products/caps/normalcaps.html">
-                                View Items
-                            </a>
-                        </div>
-                    </li>
-                    
                 </ul>
+
         </div>
     </div>
     
@@ -721,58 +354,9 @@
 
 
     <div class="footer">
-        <div class="footer-con">
-            <div class="newsletter-con">
-                <p>Newsletter</p>
-                <p>Join our newsletter and get to know about discounts, drops, offers and much more</p>
-                <div class="newsletter">
-                    <input type="text" placeholder="Email">
-                    <button>Subscribe</button>
-                </div>
-            </div>
-            <div class="pgy middle">
-                    <div class="address">
-                        <h4>Address</h4>
-                        <li>10, atunrashe street, <br> ishaga road surulere</li>
-                    </div>
-                    <ul>
-                        <h4>Useful Link</h4>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href=""><li>Men</li></a>
-                        <a href=""><li>Women</li></a>
-                        <a href="shop.html"><li>Shop</li></a>
-                        <a href="contact.html"><li>Contact Us</li></a>
-                    </ul>
-                    <ul>
-                        <h4>Information</h4>
-                        <a href="shop.html?click=1"><li>Pants</li></a>
-                        <a href="shop.html?click=2"><li>Shorts</li></a>
-                        <a href="shop.html?click=3"><li>Jackets</li></a>
-                        <a href="shop.html?click=4"><li>T-shirts</li></a>
-                        <a href="shop.html?click=5"><li>Round Nectks</li></a>
-                    </ul>
-                    <ul>
-                        <h4>Opening Hours - shop </h4>
-                        <li>Mon - Fri: 7:00 AM - 11:00 PM</li>
-                        <li>Sat - Sun: 10:00 AM - 8:00 PM</li>
-                        <li>Online- orders: Always Available</li>
-                    </ul>
-                
-            </div>
-            <div class="bottom-bottom">
-                <div class="middle">
-                    <img src="images/icons/white-logo.png" alt="">
-                    <p>© 2024, Porceslyme Clothing Brand</p>
-                    <div class="flexc">
-                        <a href="https://www.instagram.com/porceslyme_afrofits?igsh=MW9oOW1mbTRxYzZocw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="http://wa.me/2348131903787"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="tel:+2348131903787"><i class="fa-solid fa-phone"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+       
     </div>
+    <script src="js/selecting.js"></script>
 
 </body>
 </html>
