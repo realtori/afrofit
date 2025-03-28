@@ -69,7 +69,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    bottom: -100%;
+    bottom: -120%;
 }
 .cart-con{
     position: fixed;
@@ -80,7 +80,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: -100%;
+    bottom: -120%;
     transition: 0.3s ease-in-out;
 
 }
@@ -511,13 +511,13 @@ body{
     gap: 5px;
 }
 .view-items .images .img{
-    min-width: 160px;
-    height: 180px;
+    min-width: 100px;
+    height: 120px;
     overflow: hidden;
 }
 .view-items .images .img img{
-    width: 170px;
-    height: 200px;
+    width: 120px;
+    height: 140px;
     object-fit: cover;
     object-position: center;
      margin-left: 5px; 
@@ -527,7 +527,7 @@ body{
 }
 .view-items .size  > p:nth-child(1){
     color: #808080;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
 } 
 .view-items .size > .flexc{
@@ -538,7 +538,7 @@ body{
     color: green;
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 .close{
@@ -570,11 +570,11 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .view-items .text{
     padding: 20px;
-    line-height: 20px;
+    line-height: 10px;
     color: #808080;
 }
 .view-items .text .flexs:nth-child(1){
@@ -1567,6 +1567,9 @@ body{
 .exclusive-items ul li .li-con:hover img:nth-child(1){
     opacity: 0;
 }
+.exclusive-items ul li .li-con{
+    position: relative;
+}
 .exclusive-items ul li .li-con img:nth-child(2){
     position: absolute;
     top: 0;
@@ -1814,6 +1817,13 @@ body{
     }
     .exclusive-items ul li .text-li p:nth-child(2){
         font-size: 14px;
+    }
+    .exclusive-items ul li{
+        width: calc(100%/2 - 5px);
+        height: 350px;
+        position: relative;
+        list-style-type: none;
+        overflow: hidden;
     }
 }
 
@@ -2074,6 +2084,13 @@ body{
     }
     .exclusive-items-one ul li .text-li p:nth-child(2){
         font-size: 14px;
+    }
+    .exclusive-items ul li .li-con{
+        height: 200px;
+        overflow: hidden;
+    }
+    .exclusive-items ul li {
+        height: auto;
     }
 }
 .for-all{
