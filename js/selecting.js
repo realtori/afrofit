@@ -271,7 +271,6 @@ function sendOrderViaWhatsApp() {
 
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
-    alert('i was clicked')
 }
 
 
