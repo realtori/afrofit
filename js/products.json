@@ -9,6 +9,16 @@
         "description": "Top & Cap",
         "price": 1000
     },
+    {
+        "tag": "top",
+        "type": "Men wears" ,
+        "name": "Broad Horizon T-shirt",
+        "images": [
+            "images/25a.jpg", "images/25aa.jpg"
+        ],
+        "description": "Top & Cap",
+        "price": 95000
+    },
     {   
         "tag": "top",
         "type": "Men wears" ,
@@ -28,6 +38,16 @@
         ],
         "description": "Hoodie",
         "price": 2000
+    },
+    {
+        "tag": "top",
+        "type": "Men wears" ,
+        "name": "Heavens Gate T-shirt",
+        "images": [
+            "images/26a.jpg", "images/26aa.jpg"
+        ],
+        "description": "Top & Cap",
+        "price": 65000
     },
     {
         "tag": "top",
@@ -68,6 +88,16 @@
         ],
         "description": "Hoodie",
         "price": 3000
+    },
+    {
+        "tag": "top",
+        "type": "Men wears" ,
+        "name": "Eat Beings T-Shirt",
+        "images": [
+            "images/27a.jpg", "images/27aa.jpg"
+        ],
+        "description": "Top & Cap",
+        "price": 55000
     },
     {
         "tag": "top",
@@ -322,21 +352,12 @@
     {
         "tag": "socks",
         "type": "Socks" ,
-        "name": "Plain Custom Long Socks",
+        "name": "Jean Custom Long Socks",
         "images": [
             "images/5.jpg", "images/s3.jpg"
         ],
         "description": "Socks",
         "price": 3000
-    },
-    {
-        "tag": "socks",
-        "type": "Socks" ,
-        "name": "Jean Custom Long Socks",
-        "images": [
-            "images/s3.jpg", "images/s3.jpg"
-        ],
-        "description": "Socks",
-        "price": 3000
     }
+    
 ]
