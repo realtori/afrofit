@@ -37,7 +37,10 @@ function showaddcart() {
         itemInfo.style.display = 'none';
     }, 1500);
 }
-
+// function viewProductBig(product) {
+//     document.querySelector()
+    
+// }
 function updatepriceincart() {
     const cartItems = document.querySelectorAll('.cart-products .price2');
     const totalPrice = document.querySelector('.totalprice .price');
@@ -89,11 +92,45 @@ function displayProductDetails(product) {
     document.querySelector('.view-item-type').textContent = product.type;
     document.querySelector('.view-item-price').textContent = `NGN ${product.price.toLocaleString()}`;
     document.querySelector('.view-item-description').textContent = product.description;
-    
+   
     const itemImages = document.querySelector('.view-item-images');
     itemImages.innerHTML = '';
-    
+    console.log(product);
+
+    document.querySelector('.image-view .image-view-close').addEventListener('click', ()=>{
+        document.querySelector('.image-view').classList.remove('show')
+    })
+    let count = 0
+    document.querySelector('.image-view .img img').src = product.images[count]
+    document.querySelector('.image-arr .right').addEventListener('click',()=>{
+        
+        if(count >= product.images.length - 1){
+            count = 0
+            document.querySelector('.image-view .img img').src = product.images[count]
+
+        }else{
+            count++
+            document.querySelector('.image-view .img img').src = product.images[count]
+
+        }
+    })
+    document.querySelector('.image-arr .left').addEventListener('click',()=>{
+        
+        if(count <= 0 ){
+            console.log(count);
+            count = product.images.length - 1
+
+            document.querySelector('.image-view .img img').src = product.images[count]
+
+        }else{
+            count--
+            document.querySelector('.image-view .img img').src = product.images[count]
+
+        }
+    })
+   
     product.images.forEach(image => {
+        
         const imgDiv = document.createElement('div');
         imgDiv.classList.add('img');
         const img = document.createElement('img');
@@ -101,6 +138,10 @@ function displayProductDetails(product) {
         img.alt = "";
         imgDiv.appendChild(img);
         itemImages.append(imgDiv);
+        imgDiv.addEventListener('click', ()=>{
+            document.querySelector('.image-view').classList.add('show')
+            
+        })
     });
 
     const addToCartBtn = document.querySelector('.views-con .addtocart');
@@ -267,10 +308,11 @@ function sendOrderViaWhatsApp() {
     const encodedMessage = encodeURIComponent(message);
 
     // Create WhatsApp share link (replace 1234567890 with your business number)
-    const whatsappUrl = `https://wa.me/+2348109776202?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/+2348131903787?text=${encodedMessage}`;
 
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
+    alert('i was clicked')
 }
 
 
