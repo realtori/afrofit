@@ -56,9 +56,9 @@ sidebar.innerHTML = `
                 <p>Quick Links</p>
                 
                     <div class="flexc">
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.instagram.com/porceslyme_afrofits?igsh=MW9oOW1mbTRxYzZocw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <a href="http://wa.me/2348131903787"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+2348131903787"><i class="fa-solid fa-phone"></i></a>
                     </div>
             </div>
         </div>
